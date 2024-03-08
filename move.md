@@ -13,3 +13,10 @@ transform.Translate(Vector3.forward * Time.deltaTime);
 // чтобы изменить скорость передвижения объекта необходимо умножить на скорость
 transform.Translate(Vector3.forward * Time.deltaTime * 20);
 ```
+
+Можно записать значение скорости в переменную
+
+```c#
+speed = 20;
+transform.Translate(Vector3.forward * Time.deltaTime * speed);
+```
