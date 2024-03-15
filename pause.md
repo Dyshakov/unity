@@ -48,3 +48,14 @@ public class PauseManager : MonoBehaviour
 }
 
 ```
+
+# Загрузка сцены
+
+```c#
+using UnityEngine.SceneManagement;
+void LoadMenu()
+{
+    Time.timeScale = 1.0f;
+    SceneManager.LoadScene("testScene");
+}
+```
