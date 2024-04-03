@@ -60,3 +60,6 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
 }
 ```
 
+![image](https://github.com/Dyshakov/unity/assets/91851290/9cdff188-ce16-466d-a9a4-974d303f4ef3)
+
+
