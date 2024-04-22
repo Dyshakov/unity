@@ -1,5 +1,5 @@
 # Инвентарь - DragAndDrop
-Файл `InventorySlot`
+Файл `InventoryItem`
 ```c#
 using System.Collections;
 using System.Collections.Generic;
@@ -34,7 +34,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
 
 ```
 
-Файл `InventoryItem`
+Файл `inventorySlot`
 ```c#
 using System.Collections;
 using System.Collections.Generic;
@@ -54,3 +54,5 @@ public class inventorySlot : MonoBehaviour, IDropHandler
     }
 }
 ```
+Объекту `InventorySlot` необходимо добавить компонент `Grid Layout Group` и установить для параметра `Child Aligment` значение `Middle Center`:
+![image](https://github.com/Dyshakov/unity/assets/91851290/ee777499-cffe-44fa-9a5a-4f9f029f7fbe)
