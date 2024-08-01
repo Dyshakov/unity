@@ -5,6 +5,7 @@ public class MouseLook : MonoBehaviour
     public float mouseSens = 100f;
     public Transform playerBody;
     float xRotation = 0f;
+    float yRotation = 0f;
 
     void Start()
     {
@@ -18,8 +19,9 @@ public class MouseLook : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSens * Time.deltaTime;
 
         xRotation -= mouseY;
+        yRotation -= mouseX;
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        transform.localRotation = Quaternion.Euler(xRotation, -yRotation, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
 
     }
